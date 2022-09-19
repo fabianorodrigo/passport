@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.3610" tests="26" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-09-19T22:57:15" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Integration tests" timestamp="2022-09-19T22:57:15" tests="0" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Passport NTT" timestamp="2022-09-19T22:57:15" tests="0" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#deplyment" timestamp="2022-09-19T22:57:15" tests="1" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="1.4860" failures="0">
+    <testcase name="Integration tests Passport NTT #deplyment Should set the DEFAULT_ADMIN_ROLE to publisher account, set MANAGER_ROLE to the specified manager, and set MANAGER_ROLE as TEAM_ROLE&apos;s admin" time="0.0750" classname="Should set the DEFAULT_ADMIN_ROLE to publisher account, set MANAGER_ROLE to the specified manager, and set MANAGER_ROLE as TEAM_ROLE&apos;s admin">
+    </testcase>
+  </testsuite>
+  <testsuite name="#balanceOf" timestamp="2022-09-19T22:57:17" tests="4" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="0.1310" failures="0">
+    <testcase name="Integration tests Passport NTT #balanceOf Should return balanceOf multi NTT owner" time="0.0140" classname="Should return balanceOf multi NTT owner">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #balanceOf Should return balanceOf only one NTT owner" time="0.0480" classname="Should return balanceOf only one NTT owner">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #balanceOf Should return balanceOf account without NTT" time="0.0080" classname="Should return balanceOf account without NTT">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #balanceOf Should revert if gets balance of a zero address holder" time="0.0350" classname="Should revert if gets balance of a zero address holder">
+    </testcase>
+  </testsuite>
+  <testsuite name="#mint" timestamp="2022-09-19T22:57:17" tests="5" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="0.2470" failures="0">
+    <testcase name="Integration tests Passport NTT #mint Should mint a credential ID that was not minted yet" time="0.0630" classname="Should mint a credential ID that was not minted yet">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #mint Should revert if mint to a zero address holder" time="0.0260" classname="Should revert if mint to a zero address holder">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #mint Should revert if mint a credential ID already minted to the same address" time="0.0230" classname="Should revert if mint a credential ID already minted to the same address">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #mint Should revert if mint a credential ID already minted to another address" time="0.0190" classname="Should revert if mint a credential ID already minted to another address">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #mint Should revert if an non TEAM_ROLE account mint a credential ID" time="0.0900" classname="Should revert if an non TEAM_ROLE account mint a credential ID">
+    </testcase>
+  </testsuite>
+  <testsuite name="#ownerOf" timestamp="2022-09-19T22:57:17" tests="2" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="0.0420" failures="0">
+    <testcase name="Integration tests Passport NTT #ownerOf Should return ownerOf NTT" time="0.0080" classname="Should return ownerOf NTT">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #ownerOf Should revert if get ownerOf inexistent credentialID" time="0.0260" classname="Should revert if get ownerOf inexistent credentialID">
+    </testcase>
+  </testsuite>
+  <testsuite name="#getCredential" timestamp="2022-09-19T22:57:17" tests="3" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="0.0540" failures="0">
+    <testcase name="Integration tests Passport NTT #getCredential Should return NTT Credential" time="0.0160" classname="Should return NTT Credential">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #getCredential Should return revoked NTT Credential" time="0.0160" classname="Should return revoked NTT Credential">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #getCredential Should revert if get inexistent Credential" time="0.0120" classname="Should revert if get inexistent Credential">
+    </testcase>
+  </testsuite>
+  <testsuite name="#revoke" timestamp="2022-09-19T22:57:17" tests="4" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="0.1930" failures="0">
+    <testcase name="Integration tests Passport NTT #revoke Should revoke an existing not revoked credential ID" time="0.0460" classname="Should revoke an existing not revoked credential ID">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #revoke Should revert if revoke an inexistent Credential" time="0.0220" classname="Should revert if revoke an inexistent Credential">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #revoke Should revert if revoke a credential ID already revoked" time="0.0200" classname="Should revert if revoke a credential ID already revoked">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #revoke Should revert if an non TEAM_ROLE account revoke a credential ID" time="0.0890" classname="Should revert if an non TEAM_ROLE account revoke a credential ID">
+    </testcase>
+  </testsuite>
+  <testsuite name="#isValid" timestamp="2022-09-19T22:57:17" tests="3" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="0.0520" failures="0">
+    <testcase name="Integration tests Passport NTT #isValid Should return isValid = TRUE if credential not revoked" time="0.0170" classname="Should return isValid = TRUE if credential not revoked">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #isValid Should return isValid = FALSE if credential revoked" time="0.0090" classname="Should return isValid = FALSE if credential revoked">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #isValid Should revert if inexistent credentialID" time="0.0160" classname="Should revert if inexistent credentialID">
+    </testcase>
+  </testsuite>
+  <testsuite name="#hasValid" timestamp="2022-09-19T22:57:17" tests="4" file="/home/fabianorodrigo/Projetos/solidity/passport/test/index.ts" time="0.1510" failures="0">
+    <testcase name="Integration tests Passport NTT #hasValid Should return hasValid = TRUE if holder has only one and valid credential" time="0.0500" classname="Should return hasValid = TRUE if holder has only one and valid credential">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #hasValid Should return hasValid = TRUE if holder has revoked, expired and valid credentials" time="0.0230" classname="Should return hasValid = TRUE if holder has revoked, expired and valid credentials">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #hasValid Should return hasValid = FALSE if holder has only revoked and expired credentials" time="0.0480" classname="Should return hasValid = FALSE if holder has only revoked and expired credentials">
+    </testcase>
+    <testcase name="Integration tests Passport NTT #hasValid Should return hasValid = FALSE if holder has no credentials" time="0.0110" classname="Should return hasValid = FALSE if holder has no credentials">
+    </testcase>
+  </testsuite>
+</testsuites>

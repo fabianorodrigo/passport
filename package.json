@@ -1,0 +1,28 @@
+{
+  "name": "passport-ntt",
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "build": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "slither": "slither .  --exclude-dependencies  --exclude-informational",
+    "deploy": "npx hardhat run --network rinkeby scripts/deploy.ts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "dotenv": "^16.0.2",
+    "hardhat": "^2.11.1",
+    "mocha-junit-reporter": "^2.0.2",
+    "mocha-multi-reporters": "^1.5.1"
+  },
+  "dependencies": {
+    "@ethersproject/abi": "^5.4.7",
+    "@ethersproject/bytes": "^5.0.0",
+    "@openzeppelin/contracts": "^4.7.3",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "ethers": "^5.4.7",
+    "solidity-coverage": "^0.7.21"
+  }
+}
